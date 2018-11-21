@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>www.revalueit.co Site web de Revalue IT Countdown / Coming Soon Page</title>
+
+<!--CSS-->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap-light.css">
+<!--CSS-->
+<!--/FontAwesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!--/FontAwesome-->
+<!--JS-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery.plugin.js"></script>
+<script src="js/jquery.countdown.js"></script>
+<script>
+  $(function () {
+  $('#defaultCountdown').countdown({until: new Date(2018, 12-1, 1)});
+  //Replace above date with your own, to find out more visit http://keith-wood.name/countdown.html2018, 12-1, 1
+});
+</script>
+<!--JS-->
+<!--GoogleAnalytics Tracking code-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55298073-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!--/GoogleAnalytics Tracking code-->
+
+</head>
+
+<body>
+  <!--DARK OVERLAY-->
+  <div class="overlay"></div>
+  <!--/DARK OVERLAY-->
+  <div class="navbar">
+    <div class="logo">
+       <img src="img/logo/square-white-green.png" alt="REVALUE IT Square Logo" class="image-left">
+    </div>
+    <div class="social">
+    <a target="_blank" href="https://www.facebook.com/revalueyourit/"><i class="fab fa-facebook-f"></i></a>
+    <a target="_blank" href="https://twitter.com/revalueyourit"><i class="fab fa-twitter"></i></a>
+    <a target="_blank" href="https://www.linkedin.com/company/revalue-your-it"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+  <!--WRAP-->
+  <div id="wrap">
+    <!--CONTAINER-->
+    <div class="container">
+      <h1>Datacenter & IT<br>
+          Decommissioning</h1>
+      <img src="img/logo/REVALUEIT-large.png" alt="REVALUE IT Logo" class="image-align">
+      <p>Coming <em>Soon</em></p>
+      <button class="btn-primary text-center" id="open-popup"><i class="fas fa-paper-plane"></i>Get notified</button>
+      <div id="defaultCountdown"></div>
+    </div>
+    <!--/CONTAINER-->
+  </div>
+<!--/WRAP-->
+<!--/Mailchimp Modal "Get Notified" code-->
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false">
+</script>
+<script>
+function showMailingPopUp() {
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"d513a95bd581296cc58a5b910","lid":"5817c162c6"}) })
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+};
+
+document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+</script>
+<!--/Mailchimp Modal "Get Notified" code-->
+</body>
+</html>
