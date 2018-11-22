@@ -26,17 +26,6 @@
   <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false">
   </script>
   <!--   JS Mailchimp  -->
-  <!--/Mailchimp Modal "Get Notified" code-->
-
-  <script>
-  function showMailingPopUp() {
-      require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"d513a95bd581296cc58a5b910","lid":"ceb6d3f5f7","uniqueMethods":true}) })
-      document.cookie = “MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC”;
-  };
-
-  document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
-  </script>
-  <!--/Mailchimp Modal "Get Notified" code-->
 
   <!--GoogleAnalytics Tracking code-->
 
@@ -78,11 +67,26 @@
       <img src="img/logo/REVALUEIT-large.png" alt="REVALUE IT Logo" class="image-align">
       <h2>Coming <em>Soon</em></h2>
       <p>We are building a <strong>new platform</strong> to optimize the value of your decommissioned Datacenter & IT, we are working hard<br/> to create a new and fresh design.<br/>
-      <button class="btn-primary text-center" id="open-popup" onClick="showMailingPopUp()"><i class="fas fa-paper-plane"></i>Get notified</button>
+      <button class="btn-primary text-center open-popup" id="open-popup" onClick="showMailingPopUp()"><i class="fas fa-paper-plane"></i>Get notified</button>
       <div id="defaultCountdown"></div>
     </div>
     <!--/CONTAINER-->
   </div>
 <!--/WRAP-->
+<!--/Mailchimp Modal "Get Notified" code-->
+
+  <script>
+    function showMailingPopUp() {
+        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"d513a95bd581296cc58a5b910","lid":"ceb6d3f5f7","uniqueMethods":true}) })
+        document.cookie = “MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC”;
+    };
+
+    $(function() {
+      $(".open-popup").on('click', function() {
+        showMailingPopUp();
+      });
+    });
+  </script>
+<!--/Mailchimp Modal "Get Notified" code-->
 </body>
 </html>
