@@ -40,7 +40,7 @@
   <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false">
   </script>
 
-  <script>
+  <script type="text/javascript">
     function showMailingPopUp() {
         require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"d513a95bd581296cc58a5b910","lid":"ceb6d3f5f7","uniqueMethods":true}) })
         document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
