@@ -37,8 +37,6 @@
 
   <!--/GoogleAnalytics Tracking code-->
   <!--   JS Mailchimp  -->
-  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false">
-  </script>
   <!--   JS Mailchimp  -->
 </head>
 
@@ -73,7 +71,18 @@
   </div>
 <!--/WRAP-->
   <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-  <script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"d513a95bd581296cc58a5b910","lid":"ceb6d3f5f7","uniqueMethods":true}) })</script>
+  <script type="text/javascript">
+
+    function showMailingPopUp() {
+      window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"d513a95bd581296cc58a5b910","lid":"ceb6d3f5f7","uniqueMethods":true}) })
+    }
+
+    $('#open-popup').click(function(){
+      console.log("hi there");
+      showMailingPopUp();
+    });
+
+    </script>
 
 
 <!--   <script type="text/javascript">
@@ -84,10 +93,6 @@
         document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
     };
 
-    $('#open-popup').click(function(){
-      console.log("hi there");
-      showMailingPopUp();
-    });
   </script> -->
 </body>
 </html>
