@@ -80,9 +80,10 @@
         document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
     };
 
-    const button = document.getElementById("open-popup")
-    button.addEventeListener("click", function(){
-    showMailingPopUp()});
+    $('#open-popup').click(function(){
+      console.log("hi there");
+      showMailingPopUp();
+    });
   </script>
 </body>
 </html>
