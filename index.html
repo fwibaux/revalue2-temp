@@ -37,21 +37,7 @@
 
   <!--/GoogleAnalytics Tracking code-->
   <!--   JS Mailchimp  -->
-  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false">
-  </script>
-
-  <script type="text/javascript">
-    function showMailingPopUp() {
-        document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
-        document.cookie = "MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
-        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"d513a95bd581296cc58a5b910","lid":"ceb6d3f5f7","uniqueMethods":true}) })
-        document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-    };
-
-    $("#open-popup").click(function(){
-        console.log("Hello")
-        showMailingPopUp()
-    });
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false">
   </script>
   <!--   JS Mailchimp  -->
 </head>
@@ -86,5 +72,17 @@
     <!--/CONTAINER-->
   </div>
 <!--/WRAP-->
+  <script type="text/javascript">
+    function showMailingPopUp() {
+        document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+        document.cookie = "MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"d513a95bd581296cc58a5b910","lid":"ceb6d3f5f7","uniqueMethods":true}) })
+        document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    };
+
+    const button = document.getElementById("open-popup")
+    button.addEventeListener("click", function(){
+    showMailingPopUp()});
+  </script>
 </body>
 </html>
