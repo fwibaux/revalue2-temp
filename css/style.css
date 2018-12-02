@@ -74,7 +74,7 @@ body h1 {
   height: 100%;
   display: table;
   position: relative;
-  z-index: 10000;
+  z-index: 2;
 }
 
 #defaultCountdown {
