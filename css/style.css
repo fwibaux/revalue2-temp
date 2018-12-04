@@ -46,9 +46,9 @@ body {
 @media only screen and (max-width: 500px) {
   body {
   background: url(../img/background-mobile.png) top center no-repeat #000;
+  width: 100%;
   }
 }
-
 
 body h1 {
   font-family: Circular-Book;
@@ -56,12 +56,22 @@ body h1 {
   font-weight: normal;
   font-size: 65px;
 }
-
 @media only screen and (max-width: 500px) {
-  body h1 {
+  body h1{
     font-size: 36px;
   }
+  p {
+    font-size: 12px;
+    padding:25px;
+  }
+  .navbar {
+    width:100%;
+  }
+  .overlay {
+    height: 100%;
+  }
 }
+
 
 .overlay {
   background: rgba(0,0,0,.6);
