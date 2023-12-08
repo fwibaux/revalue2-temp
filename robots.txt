@@ -1,0 +1,4 @@
+Sitemap: https://www.revalueit.co/sitemap.xml
+
+User-agent: *
+Disallow:
