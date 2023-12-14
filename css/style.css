@@ -194,12 +194,14 @@ text-decoration:underline;
   display: block;
   font-size: 20px;
   font-family: Circular-Book;
-  height: 52px;
+  height: 32px;
   width: 175px;
   border-radius: 100px;
-  background-color: #C41C26;
-  border-color: #C41C26;
+  background-color: #8048f6;
+  border-color: #8048f6;
   margin-top: 20px;
+  padding:10px 0 10px 0;
+  text-decoration:none;
 }
 
 button i {
