@@ -41,6 +41,7 @@ body {
   font-weight: bolder;
   font-style: normal;
   background: url(../img/background.jpg) top center no-repeat #000;
+  margin-top:-110.5px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -213,6 +214,7 @@ button i {
   justify-content: space-between;
   position: relative;
   z-index: 2;
+  margin-top: 110px;
 }
 
 .navbar i {
@@ -235,7 +237,7 @@ button i {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 145px;
+  margin-top: 70px;
   height: 65px;
   padding: 0px 50px;
   font-family: Circular-Book;
